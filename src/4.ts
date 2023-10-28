@@ -22,14 +22,14 @@ class Person{
 abstract class House {
     door: boolean = false
     key: Key
-    comeln: Person[] = []
+    comeHome: Person[] = []
 
     constructor(key: Key) {
         this.key=key
     }
  comeIn(person: Person) {
         if (this.door) {
-            this. comeln.push(person)
+            this. comeHome.push(person)
             console.log('The door is open,welcome')
         }
         console.log('The door could not be opened')
